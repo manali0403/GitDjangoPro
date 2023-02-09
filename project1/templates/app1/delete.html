@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>delete form</title>
+</head>
+<body>
+<form method="post">
+  {% csrf_token %}
+
+  <center>
+    <p>DO U WANT TO DELETE <span>{{form.roll}}{{form.fname}}</span></p>
+  </center>
+
+  <input type="submit" value="yes" class="btn btn-outline-success col-6">
+  <a href="{% url 'show_url' %}"><button type='button'>no</button></a>
+
+</form>
+
+</body>
+</html>

@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>add form</title>
+</head>
+<body>
+<form method="post">
+    {% csrf_token %}
+    {{form.as_p}}
+    <input type="submit" value="add_stu" class="btn btn-outline-success col-6">
+    <input type="reset" value="reset" class="btn btn-outline_warning col-6  float-right ">
+
+</form>
+</body>
+</html>
